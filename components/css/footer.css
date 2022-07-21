@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#he_footer_top{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,250px);
+    gap: 20px;
+    padding:10px 30px;
+}
+#he_footer_top img{
+    width: 100%;
+    height: 200px;
+}
