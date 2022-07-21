@@ -1,15 +1,115 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Source Sans Pro",sans-serif;
 }
 #he_footer_top{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,250px);
+    grid-template-rows: 250px;
     gap: 20px;
     padding:10px 30px;
 }
 #he_footer_top img{
     width: 100%;
     height: 200px;
+}
+hr{
+    color: grey;
+    width: 95%;
+    margin: auto;
+}
+#he_footer_mid{
+    background-color: 
+    #0087a8;
+}
+#he_upper_mid_div{
+    display: flex;
+    padding: 40px;
+    gap:20px
+}
+#he_upper_mid_div>div{
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    gap: 7px;
+}
+#he_upper_mid_div a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.h3_a_top{
+    padding-bottom: 10px;
+border-bottom:1px solid #369ac0;
+}
+#he_upper_mid_div a:hover{
+    text-decoration: underline;
+}
+#he_lower_mid_div>div{
+    display:flex;
+    padding: 30px;
+    font-size: 13px;
+    gap: 10px;
+}
+#he_lower_mid_div>div>div{
+    padding:4px 6px;
+    /* border: 1px solid; */
+    background-color: #00788e;
+}
+#he_lower_mid_div>div>div>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#he_lower_mid_div>div>div>a:hover{
+    text-decoration: underline;
+}
+#he_footer_down{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px;
+    gap: 20px;
+    background-color: #f6f6f6;
+}
+#he_footer_down>div{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+div>p{
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+}
+#he_footer_down a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+#he_footer_down a:hover{
+    text-decoration: underline;
+}
+#he_details{
+    border-left: 2px solid grey;
+    padding-left: 20px;
+}
+#he_details img{
+    margin-right: 10px;
+}
+#he_details>div{
+    display: flex;
+    gap: 10px;
+}
+#he_footer_last{
+    display: flex;
+    padding: 4px 30px;
+    font-size: 14px;
+    color: white;
+     justify-content: space-between;
+    background-color: #0087a8;
+}
+#he_footer_last img{
+    width: 15px;
+    height: 15px;
 }
