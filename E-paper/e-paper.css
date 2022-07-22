@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Sans Pro",sans-serif;
+}
+.leftside,.rightside{
+    width: 100%;
+
+}
+.leftside{
+background-image: url(https://epaper.deccanherald.com/img/banner_descritpion.svg);
+height: 100vh;
+overflow: hidden;
+position: fixed;
+width: 50%;
+left: 0;
+top: 0;
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+z-index: 100;
+}
+.rightside{
+    height: 1000px;
+}
+#he_header_img{
+    width: fit-content;
+    margin: auto;
+}
+#he_header_img>img{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        margin-top: 15px;
+}
+#he_desktop_logo>div{
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    margin: auto;
+    margin-top: 20px    ;
+}
+#he_desktop_logo>div>img:first-child{
+    width: 55px;
+    height: 108px;
+    border: 4px solid #333;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#he_desktop_logo>div>img:nth-child(2){
+    width: 150px;
+    height: 108px;
+    border-top: 2px solid;
+    border-bottom: 5px solid white;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-radius: 6px;
+}
+#he_desktop_logo>div>img:last-child{
+    width: 90px;
+    height: 108px;
+    border-top: 6px solid;
+    border-bottom: 6px solid black;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+#he_h1>h3{
+    font-weight: bold;
+    margin:auto;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+#he_last_box{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    padding: 30px;
+}
+#he_last_box>div>img{
+    width: 35px;
+    height: 35px;
+}
+.he_heading{
+    color: white;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.he_heading+p{
+    color: white;
+    margin-top: -15px;
+    font-size: 12px;
+}
+#he_a{
+    width: fit-content;
+    margin: auto;
+    margin-top: -20px;
+}
+#he_a>a{
+    color:orange;
+    font-size: 14px;
+}
