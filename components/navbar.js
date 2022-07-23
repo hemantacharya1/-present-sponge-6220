@@ -47,7 +47,7 @@ return` <div id="he_nav">
 </label>
 <div id="sidebar">
 <div class="he_menu">
-<div><a href="">Home</a></div>
+<div><a href="../index.html">Home</a></div>
 <div><a href="../Bengaluru/bengaluru.html">Bengaluru</a></div>
 <div><a href="../Karnataka/karnataka.html">Karnataka</a></div>
 <div><a href="../national,sports/natioanal.html">National</a></div>
@@ -66,7 +66,7 @@ return` <div id="he_nav">
 <div id="he_midnav">
 <div class="he_midnav1">
 <div>
-    <a href="">Home</a>
+    <a href="../index.html">Home</a>
 </div>
 <div>
     <a href="../Bengaluru/bengaluru.html">Bengaluru</a>

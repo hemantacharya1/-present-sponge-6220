@@ -7,14 +7,13 @@
     <title>DH LATEST NEWS</title>
 
     <link rel="stylesheet" href="./index.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head> -->
+    <link rel="stylesheet" href="./components/css/navbar.css">
+    <link rel="stylesheet" href="./components/css/footer.css">
+  </head>
   <body>
+    <div id="navbar">
+
+    </div>
     <div id="sh-main-body">
       <div id="sh-top-main">
         <div id="sh-top-news">
@@ -68,7 +67,7 @@
               >
             </div>
           </div>
-          <div id="sh-thirdbox"></div>
+          <div class="sh-thirdbox"></div>
           <div id="sh-fourthbox">
             <div>
               <div>
@@ -487,72 +486,12 @@
             <div class="sh-nav">
               <h3>WHAT'S BREWING</h3>
             </div>
-            <div id="sh-news-video1">
+            <div id="sh-third">
               <!-- attach news video here -->
-
-              <!-- <div
-                id="carouselExampleControls"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="https://s2.dmcdn.net/v/U6AEA1Ysq5L7MXxJT/x480"
-                      class="d-block w-100"
-                      alt="Error"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://www.deccanherald.com/business/business-news/uae-accounts-for-15-of-india-s-gems-and-jewellery-export-1129075.html"
-                      class="d-block w-100"
-                      alt="Error"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://www.deccanherald.com/state/uttara-kannada-belagavi-city/brain-dead-youth-gives-new-lease-of-life-to-four-in-belagavi-1129081.html"
-                      class="d-block w-100"
-                      alt="Error"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://www.deccanherald.com/business/business-news/dominos-india-may-shift-business-away-from-delivery-firms-zomato-and-swiggy-1129090.html"
-                      class="d-block w-100"
-                      alt="Error"
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div> -->
+              
             </div>
           </div>
-        </div>
+        </div> 
       </div>
 
       <div id="sh-top-stories2">
@@ -645,9 +584,10 @@
             <div class="sh-nav">
               <h3>HOROSCOPE</h3>
             </div>
-            <div id="sh-news-video">
+            <div id="sh-horoscope">
               <!-- attach news video here -->
-
+              <div><a href="https://www.deccanherald.com/horoscope">What does your star sign say?</a></div>
+<img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/horoscope/Virgo.svg" alt="">
               
             </div>
           </div>
@@ -1126,35 +1066,10 @@
 
     </div>
 
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script> -->
+
+    <div id="footer">
+
+    </div>
   </body>
 </html>
-<script>
-  let imgData = [
-    "https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/bb2--705x750-cbc15240-8a94-11ec-8efd-6d205f33f529.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/Jayeshbhai-Jordaar---705x750-660c01c0-cf7c-11ec-98b3-41c37f260d1c.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/Jurassic-World--Dominion-705x750-b554ee90-cd51-11ec-8d22-2363945d80ef.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/RRR-North-705x750-fd78d9c0-693d-11ec-bbcd-5d122dc4018b.jpg",
-  ];
-  let i = 0;
-  slide_Show();
-  function slide_Show() {
-    let container1 = document.querySelector("#sh-thirdbox");
-    setInterval(function () {
-      if (i === imgData.length) {
-        i = 0;
-      }
-      let img = document.createElement("img");
-      img.src = imgData[i];
-      container1.innerHTML = null;
-      container1.append(img);
-      i++;
-    }, 5000);
-  }
-</script>
+<script src="./index.js" type="module"></script>
