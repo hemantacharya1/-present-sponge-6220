@@ -22,7 +22,7 @@
   font-size: 12px;
 }
 #sh-top-header > p > a {
-  color: black;
+  color: blue;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
@@ -43,7 +43,7 @@
   height: 50px;
   font-family: sans-serif;
   font-size: 19px;
-  background-color: limegreen;
+  background-color: #ee9e18;
   color: white;
   display: flex;
   justify-content: center;
@@ -72,21 +72,15 @@
   font-size: 12px;
 }
 
-/* Top-Stories Section  */
-
-#sh-top-stories {
-  width: fit-content;
-  height: auto;
+hr {
+  width: 78%;
   margin: auto;
-  background-color: #f5f5f5;
-  padding-top: 20px;
-  margin-bottom: 50px;
+  margin-top: -1px;
 }
-
 .sh-green-tip {
   width: 1.8%;
   height: 8px;
-  background-color: limegreen;
+  background-color: #ee9e18;
   margin-left: 11%;
 }
 
@@ -106,115 +100,7 @@
 .sh-nav > p:hover {
   text-decoration: underline;
 }
-#sh-top-news {
-  width: fit-content;
-  height: auto;
-  margin: auto;
-  /* border: 1px solid teal; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  margin-left: 11%;
-  margin-right: 11%;
-  padding-bottom: 30px;
-}
 
-#sh-firstbox {
-  width: 100%;
-  height: auto;
-  margin: auto;
-}
-#sh-firstbox > a > h3 {
-  position: absolute;
-  top: 51%;
-  left: 12%;
-  color: white;
-  font-weight: bold;
-  font-size: 22px;
-}
-#sh-firstbox > a > img:hover {
-  text-decoration: underline;
-}
-.sh-secondbox {
-  background-color: white;
-}
-
-.sh-secondbox > div {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  margin-top: -10px;
-  margin-bottom: -7px;
-  padding: 12px 11px;
-}
-.sh-secondbox > div > a {
-  width: 98%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: 550;
-  line-height: 1.2;
-}
-.sh-secondbox > div:hover {
-  text-decoration: underline;
-}
-#sh-fourthbox {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-#sh-fourthbox > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: white;
-}
-#sh-fourthbox > div > div:nth-child(2) > a {
-  text-decoration: none;
-  color: black;
-  font-weight: 550;
-}
-#sh-fourthbox > div:hover {
-  text-decoration: underline;
-}
-#sh-fourthbox > div > div:nth-child(2) > p {
-  text-decoration: none;
-  color: grey;
-}
-#sh-fifthbox {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  background-color: white;
-  padding: 15px 0px;
-  padding-left: 5px;
-}
-#sh-fifthbox > a {
-  color: black;
-  font-weight: 550;
-  text-decoration: none;
-  line-height: 1.5;
-}
-#sh-fifthbox > a:hover {
-  text-decoration: underline;
-}
-
-/* CRIME SECTION */
-#sh-crime {
-  width: fit-content;
-  height: auto;
-  margin: auto;
-  padding-top: 20px;
-  margin-bottom: 50px;
-}
 .sh-crime-news {
   width: fit-content;
   height: auto;
@@ -249,7 +135,7 @@
   width: 200%;
   display: flex;
   flex-direction: column;
-  background-color: #28b428;
+  background-color: #ee9e18;
   padding: 50px;
 }
 .sh-crime-one > div:nth-child(2) > a {
@@ -268,32 +154,6 @@
   margin-left: 40px;
   font-size: 11px;
   color: white;
-}
-
-#sh-crime-two {
-  width: 100%;
-  height: 280px;
-  background-color: #28b428;
-}
-#sh-crime-two > a {
-  text-decoration: none;
-  color: white;
-  font-weight: 550;
-}
-
-#sh-crime-two > a > p {
-  width: 60%;
-  margin-top: 50px;
-  margin-left: 40px;
-  font-size: 26px;
-}
-#sh-crime-two > p {
-  margin-left: 40px;
-  font-size: 10px;
-  color: white;
-}
-#sh-crime-two:hover {
-  text-decoration: underline;
 }
 
 .sh-two {
@@ -346,38 +206,7 @@
 .sh-dis-one > div:hover {
   text-decoration: underline;
 }
-
-/* POLITICS section */
-#sh-politics {
-  width: fit-content;
-  height: auto;
-  margin: auto;
-  padding-top: 20px;
-  margin-bottom: 50px;
-  background-color: #f5f5f5;
-}
-#sh-politic-news {
-  width: fit-content;
-  height: auto;
-  margin: auto;
-  /* border: 1px solid teal; */
-  gap: 20px;
-  margin-left: 11%;
-  margin-right: 11%;
-}
-#sh-one {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* border: 1px solid blue; */
-  gap: 60px;
-}
-
-/* INFRASTRUCTURE SECTION */
-#sh-infrastructure {
+#sh-insight {
   width: fit-content;
   height: auto;
   margin: auto;
@@ -431,44 +260,96 @@
 #sh-secondone > a > h3 {
   width: 120%;
   margin-right: 40px;
+  margin-left: -15px;
 }
-
-#sh-life-in-the-city {
+#sh-secondone > p {
+  margin-top: -20px;
+  margin-left: -15px;
+}
+#sh-pointblack {
   width: fit-content;
   height: auto;
   margin: auto;
   padding-top: 20px;
   margin-bottom: 50px;
 }
-
-#sh-lifestyle-two {
+#sh-crime-two {
   width: 100%;
   height: 280px;
-  background-color: #f5f5f5;
+  background-color: white;
 }
-#sh-lifestyle-two > a {
+#sh-crime-two > a {
   text-decoration: none;
-  color: #28b428;
-  font-weight: 550;
+  color: #ee9e18;
+  font-weight: 250;
 }
 
-#sh-lifestyle-two > a > p {
+#sh-crime-two > a > p {
   width: 60%;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 40px;
   font-size: 26px;
+  line-height: 1.25;
 }
-#sh-lifestyle-two > a > p:nth-child(2) {
-  margin-top: -20px;
+#sh-crime-two > a > p:nth-child(2) {
   margin-left: 40px;
-  font-size: 10px;
-  color: grey;
+  font-size: 12px;
+  margin-top: -15px;
 }
-#sh-lifestyle-two:hover {
+#sh-crime-two:hover {
   text-decoration: underline;
 }
 
-#sh-thirdbox > img {
+.sh-secondbox {
+  background-color: white;
+}
+
+.sh-secondbox > div {
   width: 100%;
-  height: 280px;
+  height: auto;
+  margin: auto;
+  margin-top: -10px;
+  margin-bottom: -7px;
+  padding: 12px 11px;
+}
+.sh-secondbox > div > a {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+  line-height: 1.2;
+}
+.sh-secondbox > div:hover {
+  text-decoration: underline;
+}
+#sh-sunday {
+  width: fit-content;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  background-color: #f5f5f5;
+}
+#sh-politic-news {
+  width: fit-content;
+  height: auto;
+  margin: auto;
+  /* border: 1px solid teal; */
+  gap: 20px;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+#sh-one {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid blue; */
+  gap: 60px;
 }

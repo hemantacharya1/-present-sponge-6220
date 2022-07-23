@@ -4,6 +4,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+  }
 #ank_intop{
     /* border: 1px solid black; */
     width: 1180px;

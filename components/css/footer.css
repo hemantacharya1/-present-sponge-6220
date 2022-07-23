@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
     font-family: "Source Sans Pro",sans-serif;
 }
 #he_footer_top{
@@ -8,7 +8,8 @@
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 250px;
     gap: 20px;
-    padding:10px 30px;
+    padding:20px 30px;
+    margin-top: 30px;
 }
 #he_footer_top img{
     width: 100%;
@@ -77,7 +78,7 @@ border-bottom:1px solid #369ac0;
     flex-direction:column;
     gap: 20px;
 }
-div>p{
+#he_footer_down>div>p{
     font-size: 14px;
     padding-bottom: 10px;
     border-bottom: 2px solid grey;

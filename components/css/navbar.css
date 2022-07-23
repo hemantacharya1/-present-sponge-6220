@@ -1,6 +1,6 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    /* padding: 0px;
+    margin: 0px; */
     font-family: "Source Sans Pro",sans-serif;
 }
 
@@ -89,6 +89,7 @@ align-self: center;
     font-size: 12px;
     gap: 30px;
     padding: 5px 30px;
+    margin-bottom: 30px;
 }
 #he_lowernav a{
     text-decoration: none;
@@ -129,7 +130,7 @@ align-self: center;
 #sidebar{
     margin-top: 55px;
     width: 250px;
-    height: 100%;
+    height: 600px;
     position: absolute;
     background-color:#0087a8;
     text-transform: uppercase;
@@ -162,9 +163,8 @@ align-self: center;
   }
 .he_menu>div{
     border-bottom: 1px solid #026c86;
-
     padding: 25px;
-    font-size: 17px;
+    font-size: 15px;
     color: white;
     font-weight: bold;
 }
@@ -218,6 +218,8 @@ input#opensidebar{
     margin-top: -5px;
     width: 100%;
 }   
-
-
-
+#he_user{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
