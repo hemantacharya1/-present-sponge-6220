@@ -360,10 +360,22 @@ background-color: #f6f6f6;
     height: 100%;
    
 }
+#navbar{
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+}
 
     </style>
+    <link rel="stylesheet" href="../components/css/navbar.css">
+    <link rel="stylesheet" href="../components/css/footer.css">
 </head>
-<body><div id="aa_log">
+<body>
+    <div id="navbar">
+
+    </div>
+    <div id="aa_log">
     <p id="aa_log"><a id="aa_anch" href="">Home</a> / National</p>
 </div>
     <div id="aa_section">
@@ -480,7 +492,11 @@ background-color: #f6f6f6;
         </div>
     
 </div></div>
+<div id="footer">
 
+</div>
 
 </body>
 </html>
+
+<script src="./national.js" type="module"></script>

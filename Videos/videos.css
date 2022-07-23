@@ -4,7 +4,12 @@
   margin: auto;
   /* border: 1px solid red; */
 }
-
+#navbar{
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+}
 /* section header and navbar */
 
 #sh-top-header {
