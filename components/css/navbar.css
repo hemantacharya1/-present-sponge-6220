@@ -218,6 +218,8 @@ input#opensidebar{
     margin-top: -5px;
     width: 100%;
 }   
-
-
-
+#he_user{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

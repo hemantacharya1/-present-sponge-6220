@@ -10,6 +10,10 @@
     <div id="he_nav">
 
         <div id="he_navtop">
+            <div id="he_user">
+                <p id="username">User</p>
+                <p id="email">E-mail</p>
+            </div>
             <div class="he_topnav">
             <div>
                 <img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/logo/d-logo-new.svg" id="he_img">
@@ -74,13 +78,19 @@
             <a href="">Bengaluru</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">Top Stories</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Crime</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">Politics</a>
+                </div>
+                <div>
+                    <a href="">Infrastructure</a>
+                </div>
+                <div>
+                    <a href="">Life in the City</a>
                 </div>
             </div>
         </div>
@@ -88,13 +98,13 @@
             <a href="">Karnataka</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">Top Stories</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Politics</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">Districts</a>
                 </div>
             </div>
         </div>
@@ -102,13 +112,22 @@
             <a href="">National</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">Politics</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Coronavirus</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">North and Central</a>
+                </div>
+                <div>
+                    <a href="">East and Northeast</a>
+                </div>
+                <div>
+                    <a href="">West</a>
+                </div>
+                <div>
+                    <a href="">South</a>
                 </div>
             </div>
         </div>
@@ -116,13 +135,19 @@
            <a href="">Sports</a>
            <div>
             <div>
-                <a href="">top</a>
+                <a href="">Cricket</a>
             </div>
             <div>
-                <a href="">mid</a>
+                <a href="">Formula 1</a>
             </div>
             <div>
-                <a href="">bottom</a>
+                <a href="">Football</a>
+            </div>
+            <div>
+                <a href="">Tennis</a>
+            </div>
+            <div>
+                <a href="">Other Sports</a>
             </div>
         </div>
         </div>
@@ -130,13 +155,16 @@
             <a href="">Business</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">Business News</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Family Finance</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">Technology</a>
+                </div>
+                <div>
+                    <a href="">DH Wheels</a>
                 </div>
             </div>
         </div>
@@ -144,13 +172,13 @@
             <a href="">Opinion</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">DH views</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Editorials</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">Panorama</a>
                 </div>
             </div>
         </div>
@@ -158,13 +186,22 @@
             <a href="">Feature</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">Metro Life</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Entertainment</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">Travel</a>
+                </div>
+                <div>
+                    <a href="">Spactrum</a>
+                </div>
+                <div>
+                    <a href="">Sunday Harald</a>
+                </div>
+                <div>
+                    <a href="">Living</a>
                 </div>
             </div>
         </div>
@@ -172,13 +209,16 @@
             <a href="">Videos</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">Latest Videos</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Bengaluru</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">Karnataka</a>
+                </div>
+                <div>
+                    <a href="">People</a>
                 </div>
             </div>
         </div>
@@ -186,13 +226,13 @@
             <a href="">Specials</a>
             <div>
                 <div>
-                    <a href="">top</a>
+                    <a href="">Insight</a>
                 </div>
                 <div>
-                    <a href="">mid</a>
+                    <a href="">Point Black</a>
                 </div>
                 <div>
-                    <a href="">bottom</a>
+                    <a href="">Sunday Spotlight</a>
                 </div>
             </div>
         </div>
@@ -240,6 +280,10 @@
    let datee= document.getElementById('show_time').innerHTML=Date()
 }
     date()
+    let name=JSON.parse(localStorage.getItem('username'))
+    let email=JSON.parse(localStorage.getItem('useremail'))
+    document.getElementById('username').innerHTML=name
+    document.getElementById('email').innerHTML=email
 </script>
 
  

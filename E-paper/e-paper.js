@@ -46,3 +46,96 @@ let append=(data)=>{
     })
 }
 append(data)
+let signup_=()=>{
+    console.log('hii')
+    document.getElementById('login_input').innerHTML=`<input type="text" id="he_name" placeholder="Name" class="he_input_1">
+    <input type="text" id="he_email_1" placeholder="Email ID" class="he_input_1">
+    <input type="text" id="he_phone" placeholder="Phone No." class="he_input_1">
+    <input type="text" id="he_username" placeholder="User Name" class="he_input_1">
+    <input type="password" name="" id="he_password_1" placeholder="Password" class="he_input_1">
+    <input type="text" id="he_desc" placeholder="Profession" class="he_input_1">`
+
+    document.getElementById('button').innerHTML=`<button onclick="signup()" id="he_button_2" class='he_button'>SIGNUP</button>`
+}
+
+let login_=()=>{
+    window.location.reload()
+}
+
+let x=(id)=>{
+    return document.getElementById(id).value
+}
+
+async function signup(){
+    let signup_data={
+        name:x('he_name'),
+        email:x('he_email_1'),
+        mobile:x('he_phone'),
+        username:x('he_username'),
+        password:x('he_password_1'),
+        description:x('he_desc'),
+    }
+    console.log(signup_data)
+signup_data=JSON.stringify(signup_data)
+let signup_link='https://masai-api-mocker.herokuapp.com/auth/register'
+let response= await fetch(signup_link,{
+    method:'POST',
+    body:signup_data,
+    headers:{
+        'Content-Type':'application/json'
+    },
+})
+let data=await response.json()
+if(data.error==false){
+    alert('signup success')
+    window.location.reload()
+}else{
+    alert('signup fail')
+}
+}
+
+
+function login(){
+    let login_data={
+            username:x('he_user'),
+            password:x('he_password_login')
+        }
+    let signup_link='https://masai-api-mocker.herokuapp.com/auth/login'
+
+    fetch(signup_link,{
+        method:'POST',
+        body:JSON.stringify(login_data),
+        headers:{
+            'Content-Type':'application/json'
+        },
+    }).then((res)=>{
+        return res.json()
+    })
+    .then((res) =>{
+        console.log(res)
+        getmyprofile(res,login_data)
+    })
+    .catch((err) =>{
+        console.log(err)
+    })
+} 
+   function getmyprofile({token},{username}){
+    let link=`https://masai-api-mocker.herokuapp.com/user/${username}`
+     fetch(link,{
+        headers:{
+            Authorization: `Bearer ${token}`
+        }
+     })
+     .then((res) =>{
+        return res.json()
+     })
+     .then((res) =>{
+console.log(res)
+       alert(`login success Welcome!! ${res.username}`)
+       localStorage.setItem('username',JSON.stringify(res.username))
+       localStorage.setItem('useremail',JSON.stringify(res.email))
+     })
+     .catch((err) =>{
+        console.log(err.message);
+     });
+   }
