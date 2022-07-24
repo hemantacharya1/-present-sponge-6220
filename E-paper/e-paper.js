@@ -131,9 +131,10 @@ function login(){
      })
      .then((res) =>{
 console.log(res)
-       alert(`login success Welcome!! ${res.username}`)
-       localStorage.setItem('username',JSON.stringify(res.username))
+       alert(`login success Welcome!! ${res.name}`)
+       localStorage.setItem('username',JSON.stringify(res.name))
        localStorage.setItem('useremail',JSON.stringify(res.email))
+       window.location.href="../index.html"
      })
      .catch((err) =>{
         console.log(err.message);

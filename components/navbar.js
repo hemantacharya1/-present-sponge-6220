@@ -14,10 +14,10 @@ return` <div id="he_nav">
         <p id="show_time"></p>
     </div>
     <div>
-        <a href="">E-PAPER</a>
+        <a href="../E-paper/e-paper.html">E-PAPER</a>
     </div>
     <div>
-        <a href="">CLASSIFIEDS</a>
+        <a href="../E-paper/e-paper.html">CLASSIFIEDS</a>
     </div>
 </div>
 
@@ -235,6 +235,9 @@ return` <div id="he_nav">
 </div>
 <div>
     <a href="../brandsport/photo.html">Photos</a>
+</div>
+<div>
+    <a href="../E-paper/e-paper.html">E-paper</a>
 </div>
 </div>
 <div id="he_search_logo">
