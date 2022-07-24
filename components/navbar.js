@@ -3,8 +3,9 @@ return` <div id="he_nav">
 
 <div id="he_navtop">
     <div id="he_user">
-        <p id="username">User</p>
-        <p id="email">E-mail</p>
+        <p id="username"></p>
+        <p id="email"></p>
+        <button id="he_login_button"><a href="../E-paper/e-paper.html" id="a_name">Login</a></button>
     </div>
     <div class="he_topnav">
     <div>
@@ -236,9 +237,6 @@ return` <div id="he_nav">
 <div>
     <a href="../brandsport/photo.html">Photos</a>
 </div>
-<div>
-    <a href="../E-paper/e-paper.html">Login</a>
-</div>
 </div>
 <div>
 <input type="text" id="he_search">
@@ -277,10 +275,16 @@ function date(){
     let datee= document.getElementById('show_time').innerHTML=Date()
  }
      date()
-     let name=JSON.parse(localStorage.getItem('username'))
-     let email=JSON.parse(localStorage.getItem('useremail'))
-     document.getElementById('username').innerHTML=name
-     document.getElementById('email').innerHTML=email
+     let login=JSON.parse(localStorage.getItem('login'))
+     if(login=='yes'){
+        let name=JSON.parse(localStorage.getItem('username'))
+        let email=JSON.parse(localStorage.getItem('useremail'))
+        document.getElementById('username').innerHTML=name
+        document.getElementById('email').innerHTML=email
+        let btn=document.getElementById('a_name')
+        btn.innerText="logout"
+     }
+     
      let search=()=>{
         window.location.href="../Karnataka/karnataka.html"
      }

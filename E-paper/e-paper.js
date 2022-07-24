@@ -134,6 +134,7 @@ console.log(res)
        alert(`login success Welcome!! ${res.name}`)
        localStorage.setItem('username',JSON.stringify(res.name))
        localStorage.setItem('useremail',JSON.stringify(res.email))
+       localStorage.setItem('login',JSON.stringify('yes'))
        window.location.href="../index.html"
      })
      .catch((err) =>{
