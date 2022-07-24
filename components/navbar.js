@@ -237,8 +237,11 @@ return` <div id="he_nav">
     <a href="../brandsport/photo.html">Photos</a>
 </div>
 <div>
-    <a href="../E-paper/e-paper.html">E-paper</a>
+    <a href="../E-paper/e-paper.html">Login</a>
 </div>
+</div>
+<div>
+<input type="text" id="he_search">
 </div>
 <div id="he_search_logo">
     <img src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/search-new.svg" alt="">
@@ -278,5 +281,11 @@ function date(){
      let email=JSON.parse(localStorage.getItem('useremail'))
      document.getElementById('username').innerHTML=name
      document.getElementById('email').innerHTML=email
+     let search=()=>{
+        window.location.href="../Karnataka/karnataka.html"
+     }
+     document.getElementById('he_search_logo').addEventListener('click',()=>{
+        window.location.href="../Karnataka/karnataka.html"
+     })
 }
 export {navbar,navfunction}

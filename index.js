@@ -7,12 +7,13 @@ footerfun()
 
 
 let imgData = [
-    "https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/bb2--705x750-cbc15240-8a94-11ec-8efd-6d205f33f529.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/Jayeshbhai-Jordaar---705x750-660c01c0-cf7c-11ec-98b3-41c37f260d1c.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/Jurassic-World--Dominion-705x750-b554ee90-cd51-11ec-8d22-2363945d80ef.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/KGF-705x750-76008750-b6fd-11ec-9639-8322852eadd4.jpg",
-    "https://assetscdn1.paytm.com/images/cinema/RRR-North-705x750-fd78d9c0-693d-11ec-bbcd-5d122dc4018b.jpg",
+    "https://www.deccanherald.com/sites/dh/themes/deccanherald/images/app_banner_home.jpghttps://www.deccanherald.com/sites/dh/themes/deccanherald/images/app_banner_home.jpg",
+    "https://tpc.googlesyndication.com/daca_images/simgad/17548155469939438530",
+    "https://tpc.googlesyndication.com/simgad/2343926696959381329",
+    "https://static.pbcdn.in/health-cdn/images/prelead/images/offer/senior-citizen.webp",
+    "https://s.adroll.com/a/GAB/NXE/GABNXEWZRZHUPIG5N33XBH.jpg",
+    "https://tpc.googlesyndication.com/daca_images/simgad/2309045212969808009",
+    "https://zem.outbrainimg.com/p/srv/sha/80/c0/b3/e94f147837394f4166e40bc525816e755c.jpg?w=248&h=116&fit=crop&crop=center&fm=jpg"
   ];
   let i = 0;
   slide_Show();
@@ -27,7 +28,7 @@ let imgData = [
       container1.innerHTML = null;
       container1.append(img);
       i++;
-    }, 5000);
+    }, 3000);
   }
 
   let j = 0;
