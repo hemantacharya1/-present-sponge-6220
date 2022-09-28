@@ -61,7 +61,11 @@ On frontend terminal perform:
         - Email
         - Password
     - Home Page
-    
+  
+  #### Website Presentation :
+![Deccan Herald-website](./ReadMe-photo/readme_hement/01.jpg)
+![Deccan Herald-website](./ReadMe-photo/readme_hement/03.jpg)
+![Deccan Herald-website](./ReadMe-photo/readme_hement/04.jpg)
 ## Thank you note
 Thank you for checking out the project. Do star the repo to support our hardwork.
 _<p align="center"><sub>- Readme file designed by <a href="https://github.com/hemantacharya1">Hemant Acharya</a> -</sub></p>_
